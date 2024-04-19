@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5.9% 0.1% 2% 93%;
+  color: white;
+}
+
+/* Barra di sinistra */
+.leftnav {
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftnav button {
+  background-color: transparent;
+  border: none;
+  height: auto;
+  padding: 15px 0;
+  width: 100%;
+  opacity: 50%;
+}
+
+.leftnav button:hover {
+  opacity: 100%;
+}
+
+.leftnav button:focus {
+  border-left: 2px solid red;
+  opacity: 100%;
+}
+
+.leftnav button > img {
+  height: 24px;
+}
+
+.black-spacer {
+  background-color: black;
+}
+
+/* Spazio orizzontale */
+.white-spacer {
+  background-image: linear-gradient(to bottom, black, white, black);
+}
+
+/* Parte destra */
+.rightmain {
+  background-color: black;
+  display: grid;
+  grid-template-rows: 50% 30% 20%;
+}
+
+/* Parte destra sopra */
+.righttop {
+  padding: 5% 0 0 0;
+  background-image: url(../img/tizia13rw.jpg);
+  background-size: 100%;
+  background-position-y: center;
+}
+
+.textoverlay {
+  max-width: 30em;
+  letter-spacing: 0.08em;
+}
+
+.wide-spaced {
+  letter-spacing: 0.5em;
+  margin-left: 0.6em;
+}
+
+.discolored {
+  color: azure;
+}
+
+.logowrite {
+  display: flex;
+  align-items: center;
+}
+
+.netflixicon {
+  height: 25px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 300%;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pills > span:not(:first-child) {
+  margin-left: 0.8em;
+}
+
+.green {
+  color: greenyellow;
+  font-weight: bolder;
+}
+
+.caged {
+  border: 1px solid azure;
+}
+
+.synopsis {
+  max-width: 85%;
+}
+
+/* Parte destra centrale */
+.rightmid {
+  margin-top: -30px;
+}
+
+.topfive {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center;
+}
+
+.card {
+  padding: 3px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.reminder {
+  opacity: 50%;
+}
+
+.reminder.none {
+  visibility: hidden;
+}
+
+.reminder img,
+.reminder-bell img {
+  height: 14px;
+  width: auto;
+}
+
+.reminder-bell {
+  display: none;
+}
+
+.card:hover .reminder-bell {
+  display: block;
+}
+
+.card:hover .reminder {
+  display: none;
+}
+
+.card:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Parte destra bassa */
+.rightbot {
+  color: red;
+}
+
+.netflixwrite {
+  width: 150px;
+  right: 25px;
+  bottom: 15px;
+  position: absolute;
+}
